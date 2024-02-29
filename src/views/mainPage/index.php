@@ -8,7 +8,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
     <div class="mobile-display">
         <div class="top-bar">
             <div class="side-bar-button">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-play"></i>
             </div>
             <div class="side_bar">
                 <?php

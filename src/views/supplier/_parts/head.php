@@ -72,15 +72,19 @@
 
         .side-bar-button {
             display: flex;
-            width: 30px;
-            height: 30px;
+            width: 40px;
+            height: 40px;
             font-size: 23px;
             justify-content: center;
             align-items: center;
             color: white;
+            border: solid 3px white;
+            border-radius: 50%;
             transition: 0.5s;
         }
-
+        .side-bar-button .fa-play{
+            margin-left: 5px;
+        }        
         .side-bar-button:hover {
             color: #0A8C2C;
         }
