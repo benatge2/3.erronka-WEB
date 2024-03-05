@@ -18,6 +18,9 @@
             <li class="item">
                 <a href="#">TRAGA-PERRAS</a>
             </li>
+            <li class="item">
+                <a href="#">PARCHIS</a>
+            </li>
         </ul>
     </div>
 </div>

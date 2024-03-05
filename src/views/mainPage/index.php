@@ -7,14 +7,11 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
 <body>
     <div class="mobile-display">
         <div class="top-bar">
-            <div class="side-bar-button">
-                <i class="fa-solid fa-play"></i>
-            </div>
-            <div class="side_bar">
-                <?php
-                require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/side-bar.php')
-                ?>
-            </div>
+            <!--<div class="side_bar">
+                
+                //require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/side-bar.php')
+                
+            </div>-->
             <?php
             require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/top_bar.php');
             ?>
