@@ -1,8 +1,10 @@
-<!--<div class="side-bar-button">
-    <i class="fa-solid fa-bars"></i>
-</div>-->
 <div class="menu">
-    <h1 class="logo">50SLASH50</h1>
+    <div class="head-section">
+        <h1 class="logo">50SLASH50</h1>
+        <div class="close">
+            <i class="fa-light fa-x"></i>
+        </div>
+    </div>
     <div class="bar-content">
         <ul class="menu-items">
             <div class="section-title">JUEGOS</div>

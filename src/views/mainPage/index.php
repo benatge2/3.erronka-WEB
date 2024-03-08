@@ -7,21 +7,25 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
 <body>
     <div class="mobile-display">
         <div class="top-bar">
-            <!--<div class="side_bar">
-                
-                //require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/side-bar.php')
-                
-            </div>-->
             <?php
             require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/top_bar.php');
             ?>
+        </div>
+        <div class="low-bar">
+            <?php
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/low-bar.php');
+            ?>
+            <div class="side_bar">
+                <?php
+                require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/side-bar.php')
+                ?>
+            </div>
         </div>
     </div>
     <script>
         $(document).ready(function(){
             $('.side-bar-button').click(function(){
                 $('.side_bar').toggleClass('side-bar_open');
-                $('.side-bar-button').toggleClass('button-move');
 
                 if ($('.side_bar').hasClass('side-bar_open')) {
                     $('.side_bar').show(); // Muestra el side-bar
@@ -29,6 +33,13 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
                     $('.side_bar').hide(); // Oculta el side-bar si no tiene la clase side-bar_open
                 }
             });
+            $('.close').click(function(){
+                $('.side_bar').toggleClass('side-bar_close');
+
+                if($('.side_bar').hasClass('side-bar_close')){
+                    $('.side_bar').hide();//Oculta el side-bar al clickar en la 'X'
+                }
+            })
         });
     </script>
 </body> 
