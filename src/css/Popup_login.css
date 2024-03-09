@@ -1,0 +1,127 @@
+.logIn{
+    display: flex;
+    flex-direction: column;/*Los elementos hijos se apilan verticalmente uno encima del otro.*/
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    border: solid 1px black;
+    margin-left: 10%;
+    height: 400px;
+    margin-top: 10%;
+    border-radius: 20px;
+    padding: 10px 30px;
+    position: absolute;
+    z-index: 2;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 42%, rgba(0,220,255,1) 100%);
+}
+.logIn .form-content .form-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    border-bottom: #F5FF76 solid 1px;
+    margin-top: -20px;
+}.logIn .form-content .form-header .h2{
+    letter-spacing: -1px;
+    position: relative;
+}
+.logIn .form-content .form-header .fa-x{
+    cursor: pointer;
+}
+.logIn .form-content .singUp-form{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+.singUp-form .userSing{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px
+}
+.singUp-form .userSing label{
+    position: relative;
+}
+.singUp-form .userSing .input{
+    width: 100%;
+    padding: 10px 20px 10px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    margin: 5px;
+}
+.singUp-form .userSing label .input + span{
+    position:absolute;/*Esto hara que el span se coloque en la misma linea que los inputs y luego los colocaremos dentro de los inputs como si fueran placeholders*/
+    left: 15px;
+    top: 10px;
+    color: grey;
+    font-size: 14.4px;
+    cursor: text;
+    transition: 0.3s ease;
+}
+.singUp-form .userSing label .input:placeholder-shown + span{
+    top: 15px;
+    font-size: 14.4px;
+}
+.singUp-form .userSing label .input{
+    color: black;
+}
+/*En esta parte de aqui es lo que hace que el span dentro del imput se estruje*/
+.singUp-form .userSing label .input:focus + span,
+.singUp-form .userSing label .input:valid + span{
+    top: 30px;
+    font-size: 11.2px;
+    font-weight: 600;
+}
+.singUp-form .userSing label .input:valid + span{
+    color:green;
+}
+.singUp-form .userSing .submit{
+    background-color: #F5FF76;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 20px 10px 10px;
+    width: 100%;
+    margin: 5px;
+    margin-left: 15px;
+    color:black;
+    cursor: pointer;
+}
+.singUp-form .userSing .submit:hover{
+    background-color: rgb(56, 90, 194);
+}
+.singUp-form .userSing a{
+    color: royalblue;
+}
+.singUp-form .userSing a:hover{
+    text-decoration: underline royalblue;
+}
+.singUp-form .userSing p{
+    text-align: center;
+}
+.overlay{
+    position: fixed; /*Un elemento con position: fixed; se coloca en relación con la ventana del navegador, lo que significa que siempre permanece fijo en el lugar, incluso si se desplaza la página.*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);/*Esta para añadir el efecto borroso en la pantalla*/
+    z-index: 1;/*El z-index: 1; aplicado al elemento con la clase .overlay tiene un propósito importante al crear un efecto de superposición (modal, diálogo emergente o similar) sobre el resto del contenido de la página.*/
+}
+.hidden{
+    display: none;
+}
+
+
+
+
+

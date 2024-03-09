@@ -2,7 +2,7 @@
     <div class="head-section">
         <h1 class="logo">50SLASH50</h1>
         <div class="close">
-            <i class="fa-light fa-x"></i>
+            <i class="fa-light fa-x close-singUp"></i>
         </div>
     </div>
     <div class="bar-content">

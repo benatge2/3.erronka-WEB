@@ -21,6 +21,12 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
                 ?>
             </div>
         </div>
+        <section class="logIn hidden">
+            <?php
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/Popup_login.php');
+            ?>
+        </section>
+        <div class="overlay hidden"></div>
     </div>
     <script>
         $(document).ready(function(){
@@ -39,6 +45,22 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
                 if($('.side_bar').hasClass('side-bar_close')){
                     $('.side_bar').hide();//Oculta el side-bar al clickar en la 'X'
                 }
+            });
+        });
+        $(document).ready(function(){
+            var logIn = $(".logIn");
+            var overlay = $(".overlay");
+            var openLogIn = $(".sing-up-button");
+            var closeLogIn = $(".fa-x");
+
+            openLogIn.click(function(){
+                logIn.removeClass('hidden');
+                overlay.removeClass('hidden'); 
+            })
+
+            closeLogIn.click(function(){
+                logIn.addClass('hidden');
+                overlay.addClass('hidden');
             })
         });
     </script>
