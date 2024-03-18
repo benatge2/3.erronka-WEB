@@ -1,4 +1,4 @@
-<div class="mySlide">
+<div class="mySlide frame">
     <div class="priceImage">
         <img src="#" style="width:100%">
     </div>
@@ -7,7 +7,7 @@
     </div>
 </div>
 
-<div class="mySlide">
+<div class="mySlide frame">
     <div class="priceImage">
         <img src="#" style="width:100%">
     </div>
@@ -16,7 +16,7 @@
     </div>
 </div>
 
-<div class="mySlide">
+<div class="mySlide frame">
     <div class="priceImage">
         <img src="#" style="width:100%">
     </div>
@@ -25,7 +25,7 @@
     </div>
 </div>
 
-<div class="mySlide">
+<div class="mySlide frame">
     <div class="priceImage">
         <img src="#" style="width:100%">
     </div>
@@ -34,7 +34,7 @@
     </div>
 </div>
 
-<div class="mySlide">
+<div class="mySlide frame">
     <div class="priceImage">
         <img src="#" style="width:100%">
     </div>
