@@ -47,5 +47,14 @@ function pedirCartas () {
 
 //funcion para plantarse 
 function plantarme () {
+// Sacar carta al crupier y que tenga un mínimo de 17 puntos
+while (pointsCrupier < 17) {
+    cartasCrupier.push(cartas[indiceCarta]);
+    pointsCrupier += cartas[indiceCarta].valor;
+    indiceCarta++;
+}
+}
 
+function repetirJuego () {
+    location.reload(true);
 }
