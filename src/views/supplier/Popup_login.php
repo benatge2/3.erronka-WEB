@@ -1,6 +1,6 @@
 <div class="form-content">
     <header class="form-header">
-        <h2>SING UP</h2>
+        <h2>LOG IN</h2>
         <div class="form-close">
             <i class="fa-light fa-x"></i>
         </div>

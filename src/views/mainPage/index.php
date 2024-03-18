@@ -17,7 +17,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
             ?>
             <div class="side_bar">
                 <?php
-                require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/side-bar.php')
+                require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/side-bar.php');
                 ?>
             </div>
         </div>
@@ -27,9 +27,15 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
             ?>
         </section>
         <div class="overlay hidden"></div>
+        <div class="carruselContainer">
+            <?php
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/carrusel-Premios.php');
+            ?>
+        </div>
     </div>
     <script>
         $(document).ready(function(){
+
             $('.side-bar-button').click(function(){
                 $('.side_bar').toggleClass('side-bar_open');
 
@@ -46,8 +52,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
                     $('.side_bar').hide();//Oculta el side-bar al clickar en la 'X'
                 }
             });
-        });
-        $(document).ready(function(){
+
             var logIn = $(".logIn");
             var overlay = $(".overlay");
             var openLogIn = $(".sing-up-button");
@@ -61,7 +66,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
             closeLogIn.click(function(){
                 logIn.addClass('hidden');
                 overlay.addClass('hidden');
-            })
+            });
+
         });
+        
     </script>
 </body> 

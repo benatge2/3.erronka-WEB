@@ -1,0 +1,15 @@
+.mobile-display .carruselContainer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    color: black;
+    margin-top: 10%;
+}
+.carruselContainer .mySlide{
+    width: 100%;
+    height: fit-content;
+}
