@@ -29,6 +29,8 @@
   width: 270%;
   height: 200px;
   margin: 0 0 0 -180%;
+  /*-180% para el margen izquierdo (left) significa que el margen izquierdo es negativo y es igual al 180% del ancho del elemento contenedor. 
+  Esto efectivamente desplaza el elemento hacia la izquierda, fuera de la vista, creando un efecto de ocultamiento inicial.*/
   position: relative;
   -webkit-animation-name: slide_animation;
   -webkit-animation-duration: 20s;
@@ -40,11 +42,11 @@
 .imgContainer{
   height: 200px;
   width: 90%;
+  display: inline-block;/*Uso de display: inline-block;: Para que las imágenes se muestren una al lado de la otra*/
   position: relative;
   float: left;
 }
 .imgContainer img{
-  display: inline-block;/*Uso de display: inline-block;: Para que las imágenes se muestren una al lado de la otra*/
   height: 200px;
   width: 90%;
   position: relative;
