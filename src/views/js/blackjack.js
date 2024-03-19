@@ -96,25 +96,25 @@ function plantar() {
 
     let message = "";
     if (sumaJugador > 21) {
-        message = "You Lose!";
+        message = "Has perdido!";
     }
     else if (sumaCrupier > 21) {
-        message = "You win!";
+        message = "Has ganado!";
     }
     //empate con 21
     else if (sumaJugador == sumaCrupier) {
-        message = "Tie!";
+        message = "Empate";
     }
     else if (sumaJugador > sumaCrupier) {
-        message = "You Win!";
+        message = "Has ganado!";
     }
     else if (sumaJugador < sumaCrupier) {
-        message = "You Lose!";
+        message = "Has perdido!";
     }
 
     document.getElementById("suma-crupier").innerText = sumaCrupier;
     document.getElementById("suma-jugador").innerText = sumaJugador;
-    document.getElementById("results").innerText = message;
+    document.getElementById("resultado").innerText = message;
 }
 
 function obtenerValor(card) {
@@ -136,7 +136,7 @@ function buscarAs(card) {
     }
     return 0;
 }
-
+//depende del valor total de cartas el As tendrá un valor u otro
 function valorAs(playerSum, playerAceCount) {
     while (playerSum > 21 && playerAceCount > 0) {
         playerSum -= 10;
