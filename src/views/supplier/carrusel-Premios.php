@@ -1,44 +1,23 @@
-<div class="mySlide frame">
-    <div class="priceImage">
-        <img src="#" style="width:100%">
-    </div>
-    <div class="user">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    </div>
-</div>
+<div class="slide-prices">
+  <div class="imgContainer">
+    <img src="../../../public/ordenadorFroga.jpg">
+  </div>
+  <div class="slideText">
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elite.</span>
+  </div>
 
-<div class="mySlide frame">
-    <div class="priceImage">
-        <img src="#" style="width:100%">
-    </div>
-    <div class="user">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    </div>
-</div>
+  <div class="imgContainer">
+    <img src="../../../public/honor.jpg">
+  </div>
+  <div class="slideText">
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elite.</span>
+  </div>
 
-<div class="mySlide frame">
-    <div class="priceImage">
-        <img src="#" style="width:100%">
-    </div>
-    <div class="user">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    </div>
-</div>
-
-<div class="mySlide frame">
-    <div class="priceImage">
-        <img src="#" style="width:100%">
-    </div>
-    <div class="user">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    </div>
-</div>
-
-<div class="mySlide frame">
-    <div class="priceImage">
-        <img src="#" style="width:100%">
-    </div>
-    <div class="user">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    </div>
+  <div class="imgContainer">
+    <img src="../../../public/movil3.png">
+  </div>
+  <div class="slideText">
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elite.</span>
+  </div>
+  
 </div>

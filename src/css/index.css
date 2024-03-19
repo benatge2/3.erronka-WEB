@@ -6,8 +6,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    color: black;
-    /*color: #F5FF76;*/
+    color: #F5FF76;
 }
 body{
     margin-bottom: 120px;
