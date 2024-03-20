@@ -45,14 +45,14 @@ function iniciarPartida() {
         let cardImg = $("<img>").attr("src", "../../imagenes/blackjack/cards/" + mazo.pop() + ".png");
         sumaCrupier += obtenerValor(cardImg.attr("src"));
         numeroAsCrupier += buscarAs(cardImg.attr("src"));
-        $("#dealer-cards").append(cardImg);
+        $("#cartasCrupier").append(cardImg);
     }
 
     for (let i = 0; i < 2; i++) {
         let cardImg = $("<img>").attr("src", "./cards/" + mazo.pop() + ".png");
         sumaJugador += obtenerValor(cardImg.attr("src"));
         numeroAsJugador += buscarAs(cardImg.attr("src"));
-        $("#your-cards").append(cardImg);
+        $("#cartasJugador").append(cardImg);
     }
 
     $("#hit").on("click", pedir);
@@ -67,7 +67,7 @@ function pedir() {
     let cardImg = $("<img>").attr("src", "./cards/" + mazo.pop() + ".png");
     sumaJugador += obtenerValor(cardImg.attr("src"));
     numeroAsJugador += buscarAs(cardImg.attr("src"));
-    $("#your-cards").append(cardImg);
+    $("#cartasJugador").append(cardImg);
 
     if (valorAs(sumaJugador, numeroAsJugador) > 21) {
         puedePedir = false;
@@ -104,8 +104,8 @@ function plantar() {
         resultado = 0;
     }
 
-    $("#suma-crupier").text(sumaCrupier);
-    $("#suma-jugador").text(sumaJugador);
+    $("#sumaCrupier").text(sumaCrupier);
+    $("#sumaJugador").text(sumaJugador);
     $("#resultado").text(message);
     return resultado;
 }
