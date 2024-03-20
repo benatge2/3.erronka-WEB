@@ -9,11 +9,11 @@ let mazo;
 
 let puedePedir = true; //pedir hasta <=21
 
-window.onload = function() {
+$(document).ready(function() {
     crearMazo();
     barajearMazo();
     iniciarPartida();
-}
+});
 
 function crearMazo() {
     let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
@@ -25,7 +25,6 @@ function crearMazo() {
             mazo.push(values[j] + "-" + types[i]); //A-C -> K-C, A-D -> K-D
         }
     }
-    
 }
 
 function barajearMazo() {
@@ -35,7 +34,6 @@ function barajearMazo() {
         mazo[i] = mazo[j];
         mazo[j] = temp;
     }
-    console.log(mazo);
 }
 
 function iniciarPartida() {
@@ -44,29 +42,21 @@ function iniciarPartida() {
     numeroAsCrupier += buscarAs(oculto);
     
     while (sumaCrupier < 17) {
-      
-        let cardImg = document.createElement("img");
-        let card = mazo.pop();
-        cardImg.src = "../../imagenes/blackjack/cards/" + card + ".png";
-        sumaCrupier += obtenerValor(card);
-        numeroAsCrupier += buscarAs(card);
-        document.getElementById("dealer-cards").append(cardImg);
+        let cardImg = $("<img>").attr("src", "../../imagenes/blackjack/cards/" + mazo.pop() + ".png");
+        sumaCrupier += obtenerValor(cardImg.attr("src"));
+        numeroAsCrupier += buscarAs(cardImg.attr("src"));
+        $("#dealer-cards").append(cardImg);
     }
-    console.log(sumaCrupier);
 
     for (let i = 0; i < 2; i++) {
-        let cardImg = document.createElement("img");
-        let card = mazo.pop();
-        cardImg.src = "./cards/" + card + ".png";
-        sumaJugador += obtenerValor(card);
-        numeroAsJugador += buscarAs(card);
-        document.getElementById("your-cards").append(cardImg);
+        let cardImg = $("<img>").attr("src", "./cards/" + mazo.pop() + ".png");
+        sumaJugador += obtenerValor(cardImg.attr("src"));
+        numeroAsJugador += buscarAs(cardImg.attr("src"));
+        $("#your-cards").append(cardImg);
     }
 
-    console.log(sumaJugador);
-    document.getElementById("hit").addEventListener("click", pedir);
-    document.getElementById("stay").addEventListener("click", plantar);
-
+    $("#hit").on("click", pedir);
+    $("#stay").on("click", plantar);
 }
 
 function pedir() {
@@ -74,17 +64,14 @@ function pedir() {
         return;
     }
 
-    let cardImg = document.createElement("img");
-    let card = mazo.pop();
-    cardImg.src = "./cards/" + card + ".png";
-    sumaJugador += obtenerValor(card);
-    numeroAsJugador += buscarAs(card);
-    document.getElementById("your-cards").append(cardImg);
+    let cardImg = $("<img>").attr("src", "./cards/" + mazo.pop() + ".png");
+    sumaJugador += obtenerValor(cardImg.attr("src"));
+    numeroAsJugador += buscarAs(cardImg.attr("src"));
+    $("#your-cards").append(cardImg);
 
-    if (valorAs(sumaJugador, numeroAsJugador) > 21) { //A, J, 8 -> 1 + 10 + 8
+    if (valorAs(sumaJugador, numeroAsJugador) > 21) {
         puedePedir = false;
     }
-
 }
 
 function plantar() {
@@ -92,36 +79,42 @@ function plantar() {
     sumaJugador = valorAs(sumaJugador, numeroAsJugador);
 
     puedePedir = false;
-    document.getElementById("hidden").src = "./cards/" + oculto + ".png";
+    $("#hidden").attr("src", "./cards/" + oculto + ".png");
 
+    let resultado;
     let message = "";
     if (sumaJugador > 21) {
         message = "Has perdido!";
+        resultado = 0;
     }
     else if (sumaCrupier > 21) {
         message = "Has ganado!";
+        resultado = 1;
     }
-    //empate con 21
     else if (sumaJugador == sumaCrupier) {
         message = "Empate";
+        resultado = 2;
     }
     else if (sumaJugador > sumaCrupier) {
         message = "Has ganado!";
+        resultado = 1;
     }
     else if (sumaJugador < sumaCrupier) {
         message = "Has perdido!";
+        resultado = 0;
     }
 
-    document.getElementById("suma-crupier").innerText = sumaCrupier;
-    document.getElementById("suma-jugador").innerText = sumaJugador;
-    document.getElementById("resultado").innerText = message;
+    $("#suma-crupier").text(sumaCrupier);
+    $("#suma-jugador").text(sumaJugador);
+    $("#resultado").text(message);
+    return resultado;
 }
 
 function obtenerValor(card) {
-    let data = card.split("-"); // "4-C" -> ["4", "C"]
+    let data = card.split("-"); 
     let value = data[0];
 
-    if (isNaN(value)) { //A J Q K
+    if (isNaN(value)) {
         if (value == "A") {
             return 11;
         }
@@ -136,7 +129,7 @@ function buscarAs(card) {
     }
     return 0;
 }
-//depende del valor total de cartas el As tendrá un valor u otro
+
 function valorAs(playerSum, playerAceCount) {
     while (playerSum > 21 && playerAceCount > 0) {
         playerSum -= 10;
