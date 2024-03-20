@@ -1,9 +1,7 @@
 .mobile-display .carruselContainer{
   overflow: hidden;
-  width: 90%;
+  width: 100%;
   height: 200px;
-  margin-top: 5%;
-  margin-left: 5%;
   color: black;
 }
 
@@ -12,12 +10,12 @@
 @-webkit-keyframes slide_animation{
   0% {left: 0%;}
   10% {left: 0%;}
-  20% {left: 90%;}
-  30% {left: 90%;}
-  40% {left: 180%;}
-  50% {left: 180%;}
-  60% {left: 90%;}
-  70% {left: 90%;}
+  20% {left: 100%;}
+  30% {left: 100%;}
+  40% {left: 200%;}
+  50% {left: 200%;}
+  60% {left: 100%;}
+  70% {left: 100%;}
   80% {left: 0%;}
   90% {left: 0%;}
   100% {left: 0%;}  
@@ -26,9 +24,11 @@
 .carruselContainer .slide-prices{
   display: flex;
   justify-content: space-between;
-  width: 270%;
+  align-items: center;
+  justify-content: center;
+  width: 300%;
   height: 200px;
-  margin: 0 0 0 -180%;
+  margin: 0 0 0 -200%;
   /*-180% para el margen izquierdo (left) significa que el margen izquierdo es negativo y es igual al 180% del ancho del elemento contenedor. 
   Esto efectivamente desplaza el elemento hacia la izquierda, fuera de la vista, creando un efecto de ocultamiento inicial.*/
   position: relative;
@@ -39,15 +39,13 @@
   -webkit-animation-play-state: running;
 }
 
-.imgContainer{
-  height: 200px;
+.slide-prices .imgContainer{
+  background-image: url("../../public/ordenadorFroga.jpg");
+  background-size: cover;
+  height: 180px;
   width: 90%;
   display: inline-block;/*Uso de display: inline-block;: Para que las imágenes se muestren una al lado de la otra*/
   position: relative;
   float: left;
-}
-.imgContainer img{
-  height: 200px;
-  width: 90%;
-  position: relative;
+  box-shadow: inset gray 0px 0px 60px 10px; 
 }
