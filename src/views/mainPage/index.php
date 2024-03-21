@@ -32,6 +32,11 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
             require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/carrusel-Premios.php');
             ?>
         </div>
+        <div class="juegos">
+            <?php
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/juegos.php');
+            ?>
+        </div>
     </div>
     <script>
         $(document).ready(function(){
