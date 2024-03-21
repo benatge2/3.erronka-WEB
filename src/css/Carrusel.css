@@ -35,7 +35,7 @@
   -webkit-animation-name: slide_animation;
   -webkit-animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
+  -webkit-animation-direction: normal;
   -webkit-animation-play-state: running;
 }
 
@@ -47,5 +47,18 @@
   display: inline-block;/*Uso de display: inline-block;: Para que las imágenes se muestren una al lado de la otra*/
   position: relative;
   float: left;
-  box-shadow: inset gray 0px 0px 60px 10px; 
+  border-radius: 10px;
+  margin: 20px;
+}
+.slide-prices .imgContainer .slideText{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  text-align: center;
+}
+.slide-prices .imgContainer .slideText span{
+  font-size: 15px; /* Asegúrate de especificar una unidad de medida válida */
+  color: black;
 }
