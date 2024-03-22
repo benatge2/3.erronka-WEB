@@ -27,6 +27,12 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
             ?>
         </section>
         <div class="overlay hidden"></div>
+        <section class="register rHidden">
+            <?php
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/Popup_register.php');
+            ?>
+        </section>
+        <div class="registerOverlay rHidden"></div>
         <div class="carruselContainer">
             <?php
             require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/carrusel-Premios.php');
@@ -72,6 +78,11 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
                 logIn.addClass('hidden');
                 overlay.addClass('hidden');
             });
+
+            overlay.click(function(){
+                logIn.addClass('hidden');
+                overlay.addClass('hidden');
+            })
 
         });
         

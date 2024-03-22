@@ -1,0 +1,117 @@
+.mobile-display .register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    margin-top: -50px;
+    border-radius: 20px;
+    background-color: blue;
+    padding: 10px 30px;
+    z-index: 2;
+    position: absolute;
+}
+.register .registerForm .registerHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20%;
+    border-bottom: #F5FF76 solid 1px;
+}
+.register .registerForm .signUpRegister{
+    margin-top: 20%;
+}
+.register .registerForm .registerHeader h2{
+    letter-spacing: -1px;
+    position: relative;
+}
+.register .registerForm .registerHeader .fa-x{
+    cursor: pointer;
+}
+.register .registerForm .signUpRegister{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -10%;
+}
+.signUpRegister .userRegister{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.signUpRegister .userRegister label{
+    position: relative;
+}
+.signUpRegister .userRegister input{
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    margin: 10px;
+}
+.signUpRegister .userRegister label input + span{
+    position:absolute;/*Esto hara que el span se coloque en la misma linea que los inputs y luego los colocaremos dentro de los inputs como si fueran placeholders*/
+    top: 19px;
+    left: 18px;
+    font-size: 14.4px;
+    color: grey;
+    transition: 0.3s ease;
+    cursor: text;
+}
+.signUpRegister .userRegister label input:placeholder-shown + span{
+    top: 25px;
+    font-size: 14.4px;
+}
+.signUpRegister .userRegister label input{
+    color: black;
+}
+.signUpRegister .userRegister label input:focus + span,
+.signUpRegister .userRegister label input:valid + span{
+    top: 35px;
+    font-size: 11.2px;
+    font-weight: 600;
+}
+.signUpRegister .userRegister .submitRegister{
+    background-color: #F5FF76;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 20px 10px 10px;
+    width: 50%;
+    color: black;
+    margin: 5px;
+    font-size: 600;
+    margin-left: 28px;
+    cursor: pointer;
+}
+.signUpRegister .userRegister .submitRegister:hover{
+    background-color: rgb(56, 90, 194);
+}
+.signUpRegister .userRegister a{
+    color: greenyellow;
+}
+.signUpRegister .userRegister a:hover{
+    text-decoration: underline greenyellow;
+}
+.signUpRegister .userRegister p{
+    text-align: center;
+}
+.mobile-display .registerOverlay{
+    position: fixed; /*Un elemento con position: fixed; se coloca en relación con la ventana del navegador, lo que significa que siempre permanece fijo en el lugar, incluso si se desplaza la página.*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);/*Esta para añadir el efecto borroso en la pantalla*/
+    z-index: 1;/*El z-index: 1; aplicado al elemento con la clase .overlay tiene un propósito importante al crear un efecto de superposición (modal, diálogo emergente o similar) sobre el resto del contenido de la página.*/
+}
+.mobile-display .rHidden{
+    display: none;
+}

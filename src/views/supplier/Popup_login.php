@@ -16,7 +16,7 @@
                 <span>Password</span>
             </label>
             <button class="submit">Log In</button>
-            <p class="register">You don't have an account? <a href="#">Register</a></p>
+            <p class="registerLink">You don't have an account? <a href="#">Register</a></p>
         </form>
     </div>
 </div>
