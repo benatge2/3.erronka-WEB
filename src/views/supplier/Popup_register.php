@@ -28,7 +28,7 @@
                 <span>Comfirm Password</span>
             </label>
             <button class="submitRegister">REGISTER</button>
-            <p class="loginLink">If You already Have An Account <a href="#">Log In</a> Here</p>
+            <p class="loginLink">If You already Have An Account <a href="#" class="openLog">Log In</a> Here</p>
         </form>
     </div>
 </div>

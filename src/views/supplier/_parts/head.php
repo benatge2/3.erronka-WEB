@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/src/css/Popup_login.css">
     <link rel="stylesheet" href="/src/css/Carrusel.css">
     <link rel="stylesheet" href="/src/css/Popup_register.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
     <?php
     define('APP DIR', $_SERVER['DOCUMENT_ROOT']);
     ?>

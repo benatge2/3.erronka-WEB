@@ -34,4 +34,28 @@
             <p class="game_Text">¡Descubre el emocionante mundo del Black Jack!</p>
         </div>
     </div>
+
+    <div class="game1 imgGame4">
+        <div class="playButton">
+            <button class="clickPlay">
+                <span>PLAY</span>
+            </button>
+        </div>
+        <div class="gameTitle">
+            <h1>SLOT</h1>
+            <p class="game_Text">¡Descubre el emocionante mundo del Slot Machine!</p>
+        </div>
+    </div>
+
+    <div class="game1 imgGame5">
+        <div class="playButton">
+            <button class="clickPlay">
+                <span>PLAY</span>
+            </button>
+        </div>
+        <div class="gameTitle">
+            <h1>PARCHEESI</h1>
+            <p class="game_Text">¡Descubre el emocionante mundo del Parcheesi!</p>
+        </div>
+    </div>
 </div>

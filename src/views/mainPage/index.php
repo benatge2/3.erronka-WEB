@@ -43,6 +43,11 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
             require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/juegos.php');
             ?>
         </div>
+        <footer class="footer">
+            <?php
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/footer.php');
+            ?>
+        </footer>
     </div>
     <script>
         $(document).ready(function(){
@@ -72,7 +77,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
             openLogIn.click(function(){
                 logIn.removeClass('hidden');
                 overlay.removeClass('hidden'); 
-            })
+            });
 
             closeLogIn.click(function(){
                 logIn.addClass('hidden');
@@ -82,6 +87,37 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
             overlay.click(function(){
                 logIn.addClass('hidden');
                 overlay.addClass('hidden');
+            });
+
+            var register = $(".register");
+            var registerOverlay = $(".registerOverlay");
+            var openRegister = $(".openRegister");
+            var closeRegister = $(".fa-x");
+            var openLog = $('.openLog');
+
+            openRegister.click(function(){
+                register.removeClass('rHidden');
+                registerOverlay.removeClass('rHidden'); 
+                logIn.addClass('hidden');
+                overlay.addClass('hidden');               
+            });
+
+            closeRegister.click(function(){
+                register.addClass('rHidden');
+                registerOverlay.addClass('rHidden');
+            });
+
+            openLog.click(function(){
+                logIn.removeClass('hidden');
+                overlay.removeClass('hiddden');
+                register.addClass('rHidden');
+                registerOverlay.addClass('rHidden');
+            });
+            registerOverlay.click(function(){
+                register.addClass('rHidden');
+                registerOverlay.addClass('rHidden');
+                logIn.addClass('hidden');
+                overlay.addClass('hidden');  
             })
 
         });

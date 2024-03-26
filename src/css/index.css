@@ -206,7 +206,7 @@ body{
 }
 
 .games-wrapp .game1{
-    height: 300px;
+    height: 400px;
     width: 100%;
     background-image: url("../../public/ruleta.jpg");
     background-size: cover;
@@ -215,7 +215,7 @@ body{
 
 .games-wrapp .game1 .gameTitle{
     width: 100%;
-    margin-top: 40%;
+    margin-top: 70%;
     text-align: center;
 }
 .games-wrapp .game1 .playButton{
@@ -268,6 +268,16 @@ body{
 }
 .games-wrapp .imgGame3{
     background-image: url("../../public/blackJack.jpeg");
+    background-size: cover;
+}
+
+.games-wrapp .imgGame4{
+    background-image: url("../../public/tragaperras.jpeg");
+    background-size: cover;
+}
+
+.games-wrapp .imgGame5{
+    background-image: url("../../public/parchis.jpg");
     background-size: cover;
 }
 @media only screen and (min-device-width: 800px){
