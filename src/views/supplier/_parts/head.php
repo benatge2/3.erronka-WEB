@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/src/css/Popup_register.css">
     <link rel="stylesheet" href="/src/css/footer.css">
     <link rel="stylesheet" href="/src/css/ruleta.css">
+    <link rel="stylesheet" href="/src/css/bingo.css">
+    <link rel="stylesheet" href="/src/css/blackJack.css">
     <?php
     define('APP DIR', $_SERVER['DOCUMENT_ROOT']);
     ?>

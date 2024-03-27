@@ -12,16 +12,16 @@
                 <a href="/src/views/supplier/ruleta.php">LA GRAN RULETA</a>
             </li>
             <li class="item">
-                <a href="#">BINGO</a>
+                <a href="/src/views/supplier/bingo.php">BINGO</a>
             </li>
             <li class="item">
-                <a href="#">THE BLACK JACK</a>
+                <a href="/src/views/supplier/blackJack.php">THE BLACK JACK</a>
             </li>
             <li class="item">
-                <a href="#">TRAGA-PERRAS</a>
+                <a href="/src/views/supplier/slotMachine.php">TRAGA-PERRAS</a>
             </li>
             <li class="item">
-                <a href="#">PARCHIS</a>
+                <a href="/src/views/supplier/parcheesi.php">PARCHIS</a>
             </li>
         </ul>
     </div>
