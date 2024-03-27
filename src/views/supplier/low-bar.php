@@ -1,7 +1,7 @@
 <div class="low-bar-content">
     <div class="house">
         <button class="main-button">
-            <i class="fa-solid fa-house"><a href="#"></a></i>
+            <i class="fa-solid fa-house"><a href="/src/views/mainPage/index.php"></a></i>
         </button>
     </div>
     <div class="side-bar-button">

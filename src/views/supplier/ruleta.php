@@ -11,17 +11,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
             require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/top_bar.php');
             ?>
         </div>
-        <div class="low-bar">
-            <?php
-            require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/low-bar.php');
-            ?>
-            <div class="side_bar">
-                <?php
-                require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/side-bar.php');
-                ?>
-            </div>
-        </div>
-        <section class="logIn hidden">
+                <section class="logIn hidden">
             <?php
             require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/Popup_login.php');
             ?>
@@ -32,19 +22,26 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
             require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/Popup_register.php');
             ?>
         </section>
-        <div class="registerOverlay rHidden"></div>
-        <div class="carruselContainer">
-            <?php
-            require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/carrusel-Premios.php');
-            ?>
+        <div class="registerOverlay rHidden"></div>        
+        <div class="imgGigante ruletaimg">
+            <h1>The Great Roulette</h1>
+            <p class="textPresentacion">
+            ¡Bienvenido a la emocionante aventura de la ruleta! ¿Estás listo para sumergirte en el mundo de la ruleta, 
+            donde cada giro puede cambiar tu destino?
+            </p>
+            <div class="ruletaButton">
+                <button class="playGame">GO!</button>
+            </div>
         </div>
-        <div class="gamesIntroduction">
-            <h2 class="gameIntro">GAMES</h2>
-        </div>
-        <div class="juegos">
+        <div class="low-bar">
             <?php
-            require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/juegos.php');
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/low-bar.php');
             ?>
+            <div class="side_bar">
+                <?php
+                require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/side-bar.php');
+                ?>
+            </div>
         </div>
         <footer class="footer">
             <?php
@@ -112,7 +109,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
 
             openLog.click(function(){
                 logIn.removeClass('hidden');
-                overlay.removeClass('hiddden');
+                overlay.removeClass('hidden');
                 register.addClass('rHidden');
                 registerOverlay.addClass('rHidden');
             });
@@ -126,4 +123,4 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/src/views/supplier/_parts/head.php');
         });
         
     </script>
-</body> 
+</body>

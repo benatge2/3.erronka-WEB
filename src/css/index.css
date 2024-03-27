@@ -280,6 +280,18 @@ body{
     background-image: url("../../public/parchis.jpg");
     background-size: cover;
 }
+.mobile-display .gamesIntroduction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 10%;
+    margin-top: 10%;
+    border-top: solid 1px #F5FF76;
+    border-bottom: solid 1px #F5FF76;
+}
 @media only screen and (min-device-width: 800px){
     .mobile-display{
         width: auto;

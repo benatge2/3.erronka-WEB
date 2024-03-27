@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/src/css/Carrusel.css">
     <link rel="stylesheet" href="/src/css/Popup_register.css">
     <link rel="stylesheet" href="/src/css/footer.css">
+    <link rel="stylesheet" href="/src/css/ruleta.css">
     <?php
     define('APP DIR', $_SERVER['DOCUMENT_ROOT']);
     ?>

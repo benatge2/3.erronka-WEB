@@ -1,0 +1,57 @@
+.mobile-display .ruletaimg{
+    background-image: url("../../public/ruleta.jpg");
+    background-size: cover;
+    height: 525px;
+    width: 100%;
+    float: left;
+    box-shadow: inset 130px -100px 100px 18px rgba(0, 0, 0, 1);
+}
+.imgGigante h1{
+    font-size: 38px;
+    width: 75%;
+    padding: 10px 10px;    
+}
+.imgGigante .textPresentacion{
+    font-size: 12px;
+    width: 50%;
+    padding: 40px 10px; 
+    font-weight: 600;
+}
+.imgGigante .ruletaButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-top: 15%;
+    width: 100px;
+    margin-left: 35%;
+}
+.imgGigante .ruletaButton .playGame{
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    transition: all 0.3s;
+    background-color: #ecd448;
+    outline: none;
+    border: none;
+    color: black;
+}
+.imgGigante .ruletaButton .playGame::before{
+    background-color: #ff6700;
+    content: "";
+    position: absolute;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+.imgGigante .ruletaButton .playGame:hover{
+    background-color: #FE00C5;
+    color: #fff;
+}
+.imgGigante .ruletaButton .playGame:hover::before{
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+.imgGigante .ruletaButton .playGame:active{
+    transform: scale(0.9);
+}

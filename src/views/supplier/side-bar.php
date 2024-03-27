@@ -9,7 +9,7 @@
         <ul class="menu-items">
             <div class="section-title">JUEGOS</div>
             <li class="item">
-                <a href="#">LA GRAN RULETA</a>
+                <a href="/src/views/supplier/ruleta.php">LA GRAN RULETA</a>
             </li>
             <li class="item">
                 <a href="#">BINGO</a>
